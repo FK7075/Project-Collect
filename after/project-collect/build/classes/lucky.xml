@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE lucky SYSTEM "E:\Lucky-Teest\project-collect\src\lucky.dtd">
+<lucky>
+	<orm>
+		<jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+		<jdbc-url>jdbc:mysql://localhost:3306/project_collect?characterEncoding=utf-8</jdbc-url>
+		<jdbc-user>root</jdbc-user>
+		<jdbc-pass>1234</jdbc-pass>
+		<debug>true</debug>
+		<cache>true</cache>
+		<create-table>
+			<field-length>225</field-length>
+			<c-url>com.project.collect.pojo.User</c-url>
+			<c-url>com.project.collect.pojo.Admin</c-url>
+			<c-url>com.project.collect.pojo.Project</c-url>
+			<c-url>com.project.collect.pojo.UserProject</c-url>
+		</create-table>
+		<pool max="300" min="30"></pool>
+	</orm>
+	<mvc>
+		<setting>
+			<uri-encoding>UTF-8</uri-encoding>
+		</setting>
+	</mvc>
+</lucky>
